@@ -94,6 +94,7 @@ function App() {
         <h2 style={{ textAlign: "center", margin: "10px" }}>To Do List</h2>
         <Space direction="vertical" style={{ width: "100%", margin: "20px 0" }}>
           {todos.length === 0 ? (
+            <Card>
             <li>
               <ul style={{ margin: 0, padding: 0 }}>
                 <p
@@ -107,6 +108,7 @@ function App() {
                 </p>
               </ul>
             </li>
+            </Card>
           ) : (
             todos.map((todo, index) => (
               <Card className="listCard" key={index}  >
