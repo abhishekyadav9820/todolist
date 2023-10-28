@@ -132,15 +132,7 @@ function App() {
                     )}
                   </ul>
                   <ul style={{ fontWeight: "500" }}>
-                    (
-                    {new Date(todo.timestamp).toLocaleString("en-GB", {
-                      day: "numeric",
-                      month: "short",
-                      year: "numeric",
-                      hour: "2-digit",
-                      minute: "2-digit",
-                    })}
-                    )
+                    {todo.timestamp}
                   </ul>
                   <div style={{ display: "flex" }}>
                     <ul>
